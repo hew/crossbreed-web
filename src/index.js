@@ -23,11 +23,11 @@ const Navigation = () => (
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/">
-        <Home navigate={(route) => history.push(route)} />
-      </Route>
       <Route path="/privacy">
         <Privacy />
+      </Route>
+      <Route path="/">
+        <Home navigate={(route) => history.push(route)} />
       </Route>
     </Switch>
   );

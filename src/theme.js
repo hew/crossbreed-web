@@ -20,7 +20,7 @@ const theme = {
       display: 'flex',
       flex: '1 1 auto',
       justifyContent: 'center',
-      bg: 'secondary',
+      // bg: 'secondary',
       px: 3
     },
     Layout: {
@@ -57,19 +57,14 @@ const theme = {
     li: {
       display: 'inline-block'
     },
-    h1: {
-      color: 'primary'
-    },
-    h2: {
-      color: 'secondary'
-    },
+    h1: {},
+    h2: {},
     h4: {
       color: 'text',
       fontWeight: '200'
     },
     p: {
       fontSize: 2,
-      color: 'text'
     }
   },
 
@@ -111,8 +106,8 @@ const theme = {
     },
     underline: {
       display: 'inline-block',
-      color: 'text',
-      borderBottomColor: 'text',
+      // color: 'text',
+      // borderBottomColor: '',
       borderBottomWidth: '2px',
       borderBottomStyle: 'solid',
       cursor: 'pointer',
@@ -127,7 +122,7 @@ const theme = {
       minWidth: 0,
       alignItems: 'center',
       justifyContent: 'center',
-      bg: 'secondary',
+      // bg: 'secondary',
       px: 4,
       py: 5
     },
