@@ -3,20 +3,16 @@
 import {Global} from '@emotion/core';
 import React, {memo} from 'react';
 import {jsx, useThemeUI, ThemeProvider, Styled} from 'theme-ui';
-import {swiss} from '@theme-ui/presets';
-import {downArrow} from './utils';
-
-// Some styles are easier to just declare in an actual styles file
-import './styles.css';
+import {future} from '@theme-ui/presets';
 
 const theme = {
   //
   // Base theme
   //
-  ...swiss,
+  ...future,
   breakpoints: ['40em', '52em', '64em'],
   fonts: {
-    text: ''
+    text: 'Oxygen'
   },
   styles: {
     root: {
@@ -24,6 +20,7 @@ const theme = {
       display: 'flex',
       flex: '1 1 auto',
       justifyContent: 'center',
+      bg: 'secondary',
       px: 3
     },
     Layout: {
@@ -98,30 +95,19 @@ const theme = {
   text: {
     app: {
       title: {
-        ...swiss.styles.h1,
+        ...future.styles.h1,
         color: 'highlight',
         m: 0
       },
       platform: {
-        ...swiss.styles.h2,
+        ...future.styles.h2,
         color: 'muted',
         m: 0
       },
       url: {
-        ...swiss.styles.h3,
+        ...future.styles.h3,
         m: 0
       }
-    },
-    button: {
-      color: 'white',
-      margin: 0,
-      padding: 0
-    },
-    link: {
-      ...swiss.styles.h3,
-      color: 'muted',
-      textDecoration: 'none',
-      borderBottom: '1px solid white'
     },
     underline: {
       display: 'inline-block',
@@ -130,8 +116,7 @@ const theme = {
       borderBottomWidth: '2px',
       borderBottomStyle: 'solid',
       cursor: 'pointer',
-      mr: 3,
-      ml: 3
+      mr: 2
     }
   },
   app: {
@@ -142,7 +127,7 @@ const theme = {
       minWidth: 0,
       alignItems: 'center',
       justifyContent: 'center',
-      bg: 'white',
+      bg: 'secondary',
       px: 4,
       py: 5
     },
@@ -160,21 +145,12 @@ const theme = {
 const Reset = () =>
   React.createElement(Global, {
     styles: {
-      body: {
-        margin: '0',
-        backgroundColor: swiss.colors.background
-      },
-      '*': {
-        fontFamily: 'Oxygen'
-      },
-      a: {
-        textDecoration: 'none',
-        color: swiss.colors.primary,
-        fontSize: 20
-      },
-      img: {
-        maxWidth: '100%'
-      }
+      '*': {boxSizing: 'border-box'},
+      '*:before': {boxSizing: 'border-box'},
+      '*:after': {boxSizing: 'border-box'},
+      a: {textDecoration: 'none', color: 'inherit', fontFamily: 'inherit', fontSize: 'inherit'},
+      body: {margin: '0'},
+      img: {maxWidth: '100%'}
     }
   });
 
