@@ -12,6 +12,7 @@ export default () => {
           <img src={crossbreedScreenshot} />
         </div>
         <div sx={{mt: [4, 0]}}>
+          <s.h2>Coming Soon!</s.h2>
           <img src={appStoreBadge} />
         </div>
       </div>
