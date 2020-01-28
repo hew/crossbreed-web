@@ -38,9 +38,7 @@ export default ({navigate}) => {
       <s.p>By using our site or apps, you consent to our privacy policy.</s.p>
       <s.h2>Contacting Us</s.h2>
       <s.p>
-        If you have questions regarding this privacy policy, you may email privacy@Crossbreed.fm.
-        Please note that account deletion should be done within the Crossbreed app, not via email
-        requests, for security reasons.
+        If you have questions regarding this privacy policy, you may email matt@hew.tools.
       </s.p>
     </div>
   );
