@@ -12,8 +12,9 @@ export default () => {
           <img src={crossbreedScreenshot} />
         </div>
         <div sx={{mt: [4, 0]}}>
-          <s.h2>Coming Soon!</s.h2>
-          <img src={appStoreBadge} />
+          <a style={{outline: 'none'}} href="https://apps.apple.com/us/app/crossbreed/id1495400916?ls=1">
+             <img src={appStoreBadge} />
+          </a>
         </div>
       </div>
     </article>
